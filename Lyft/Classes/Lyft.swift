@@ -14,7 +14,7 @@ enum HTTPMethod: String {
     case PUT = "PUT"
 }
 
-class Lyft {
+public class Lyft {
     static let sharedInstance = Lyft()
     static let lyftAPIURL = "https://api.lyft.com"
     static let lyftAPIOAuthURL = "\(lyftAPIURL)/oauth"
