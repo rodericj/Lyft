@@ -34,7 +34,7 @@
 
 import Foundation
 
-extension Lyft {
+public extension Lyft {
     static func requestRide(requestRideQuery requestRideQuery: RequestRideQuery, completionHandler: ((result: Ride?, response: [String: AnyObject]?, error: NSError?) -> ())?) {
         request(.POST, path: "/rides", params: [
             "origin": ["lat": "\(requestRideQuery.origin.lat)", "lng": "\(requestRideQuery.origin.lng)", "address": "\(requestRideQuery.origin.address)"],

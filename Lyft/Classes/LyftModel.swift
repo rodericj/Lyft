@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum RideType: String {
+public enum RideType: String {
     case All = ""
     case Line = "lyft_line"
     case Lyft = "lyft"
     case Plus = "lyft_plus"
 }
 
-enum StatusType: String {
+public enum StatusType: String {
     case Pending = "pending"
     case Accepted = "accepted"
     case Arrived = "arrived"
@@ -24,7 +24,7 @@ enum StatusType: String {
     case Canceled = "canceled"
 }
 
-struct RideTypesQuery {
+public struct RideTypesQuery {
     let lat: Float
     let lng: Float
     let rideType: RideType
@@ -36,7 +36,7 @@ struct RideTypesQuery {
     }
 }
 
-struct ETAQuery {
+public struct ETAQuery {
     let lat: Float
     let lng: Float
     let rideType: RideType
@@ -48,7 +48,7 @@ struct ETAQuery {
     }
 }
 
-struct CostQuery {
+public struct CostQuery {
     let startLat: Float
     let startLng: Float
     let endLat: Float
@@ -64,12 +64,12 @@ struct CostQuery {
     }
 }
 
-struct NearbyDriversQuery {
+public struct NearbyDriversQuery {
     let lat: Float
     let lng: Float
 }
 
-struct RequestRideQuery {
+public struct RequestRideQuery {
     let origin: Address
     let destination: Address
     let rideType: RideType
@@ -83,7 +83,7 @@ struct RequestRideQuery {
     }
 }
 
-struct PricingDetails {
+public struct PricingDetails {
     let baseCharge: Int
     let costPerMile: Int
     let costPerMinute: Int
@@ -93,7 +93,7 @@ struct PricingDetails {
     let cancelPenaltyAmount: Int
 }
 
-struct RideTypesResponse {
+public struct RideTypesResponse {
     let pricingDetails: PricingDetails
     let rideType: RideType
     let displayName: String
@@ -101,13 +101,13 @@ struct RideTypesResponse {
     let seats: Int
 }
 
-struct ETAEstimate {
+public struct ETAEstimate {
     let displayName: String
     let rideType: RideType
     let etaSeconds: Int
 }
 
-struct CostEstimate {
+public struct CostEstimate {
     let rideType: RideType
     let displayName: String
     let currency: String
@@ -119,12 +119,12 @@ struct CostEstimate {
     let primetimePercentage: String
 }
 
-struct NearbyDrivers {
+public struct NearbyDrivers {
     let drivers: [Driver]
     let rideType: RideType
 }
 
-struct Driver {
+public struct Driver {
 //    let bearing: Int
     let firstName: String
     let phoneNumber: String
@@ -141,13 +141,13 @@ struct Driver {
     }
 }
 
-struct Location {
+public struct Location {
 //    let bearing: String
     let lat: Float
     let lng: Float
 }
 
-struct Address {
+public struct Address {
     let lat: Float
     let lng: Float
     let address: String
@@ -163,7 +163,7 @@ struct Address {
     }
 }
 
-struct Passenger {
+public struct Passenger {
     let firstName: String
 //    let lastName: String
 //    let phoneNumber: String
@@ -171,7 +171,7 @@ struct Passenger {
 //    let rating: String
 }
 
-struct Ride {
+public struct Ride {
     let rideId: String
     let status: StatusType
     let origin: Address
@@ -179,14 +179,14 @@ struct Ride {
     let passenger: Passenger
 }
 
-struct CancelConfirmationToken {
+public struct CancelConfirmationToken {
     let amount: Int
     let currency: String
     let token: String
     let tokenDuration: Int
 }
 
-struct Tip {
+public struct Tip {
     let amount: Int
     let currency: String
 
@@ -196,7 +196,7 @@ struct Tip {
     }
 }
 
-struct RateAndTipQuery {
+public struct RateAndTipQuery {
     let rating: Int
     let tip: Tip
     let feedback: String
@@ -208,25 +208,25 @@ struct RateAndTipQuery {
     }
 }
 
-struct Price {
+public struct Price {
     let amount: Int
     let currency: String
     let description: String
 }
 
-struct LineItem {
+public struct LineItem {
     let amount: Int
     let currency: String
     let type: String
 }
 
-struct Charge {
+public struct Charge {
     let amount: Int
     let currency: String
     let paymentMethod: String
 }
 
-struct RideReceipt {
+public struct RideReceipt {
     let rideId: String
     let price: Price
     let lineItems: [LineItem]
@@ -234,7 +234,7 @@ struct RideReceipt {
     let requestedAt: String
 }
 
-struct RidesHistoryQuery {
+public struct RidesHistoryQuery {
     let startTime: String
     let endTime: String
     let limit: String
@@ -246,7 +246,7 @@ struct RidesHistoryQuery {
     }
 }
 
-struct Vehicle {
+public struct Vehicle {
     let make: String
     let model: String
     let licensePlate: String
@@ -254,7 +254,7 @@ struct Vehicle {
     let imageURL: String
 }
 
-struct RideHistory {
+public struct RideHistory {
     let rideId: String
     let status: StatusType
     let rideType: RideType

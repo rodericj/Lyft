@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Lyft {
+public extension Lyft {
     // Initialize clientId & clientSecret
     static func set(clientId clientId: String, clientSecret: String, sandbox: Bool? = nil) {
         sharedInstance.clientId = clientId

@@ -26,7 +26,7 @@
 
 import Foundation
 
-extension Lyft {
+public extension Lyft {
     static func requestRideTypes(rideTypesQuery rideTypesQuery: RideTypesQuery, completionHandler: ((result: [RideTypesResponse]?, response: [String: AnyObject]?, error: NSError?) -> ())?) {
         request(.GET, path: "/ridetypes", params: ["lat": "\(rideTypesQuery.lat)", "lng": "\(rideTypesQuery.lng)", "ride_type": rideTypesQuery.rideType.rawValue]) { response, error in
             var rideTypesResponse = [RideTypesResponse]()

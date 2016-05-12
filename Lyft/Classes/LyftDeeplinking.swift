@@ -12,7 +12,7 @@
 
 import Foundation
 
-extension Lyft {
+public extension Lyft {
     static func openLyftRide(rideType rideType: RideType, pickup: Address? = nil, destination: Address) {
         let url: String
         if let pickup = pickup {
