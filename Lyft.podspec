@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Lyft"
-  s.version          = "0.0.4"
+  s.version          = "0.0.5"
   s.summary          = "Some pink mustache company forgot to build that SDK."
   s.description      = "Lyft is a SDK that uses Lyft public API to get prices, etas, order Lyft and more."
   s.homepage         = "https://github.com/genadyo/Lyft"

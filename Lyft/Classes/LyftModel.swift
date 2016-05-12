@@ -29,7 +29,7 @@ public struct RideTypesQuery {
     let lng: Float
     let rideType: RideType
 
-    init(lat: Float, lng: Float, rideType: RideType = .All) {
+    public init(lat: Float, lng: Float, rideType: RideType = .All) {
         self.lat = lat
         self.lng = lng
         self.rideType = rideType
@@ -41,7 +41,7 @@ public struct ETAQuery {
     let lng: Float
     let rideType: RideType
 
-    init(lat: Float, lng: Float, rideType: RideType = .All) {
+    public init(lat: Float, lng: Float, rideType: RideType = .All) {
         self.lat = lat
         self.lng = lng
         self.rideType = rideType
@@ -55,7 +55,7 @@ public struct CostQuery {
     let endLng: Float
     let rideType: RideType
 
-    init(startLat: Float, startLng: Float, endLat: Float = 0, endLng: Float = 0, rideType: RideType = .All) {
+    public init(startLat: Float, startLng: Float, endLat: Float = 0, endLng: Float = 0, rideType: RideType = .All) {
         self.startLat = startLat
         self.startLng = startLng
         self.endLat = endLat
@@ -75,7 +75,7 @@ public struct RequestRideQuery {
     let rideType: RideType
     let primetimeConfirmationToken: String
 
-    init(originLat: Float, originLng: Float, originAddress: String, destinationLat: Float, destinationLng: Float, destinationAddress: String, rideType: RideType, primetimeConfirmationToken: String = "") {
+    public init(originLat: Float, originLng: Float, originAddress: String, destinationLat: Float, destinationLng: Float, destinationAddress: String, rideType: RideType, primetimeConfirmationToken: String = "") {
         self.origin = Address(lat: originLat, lng: originLng, address: originAddress)
         self.destination = Address(lat: destinationLat, lng: destinationLng, address: destinationAddress)
         self.rideType = rideType
@@ -132,7 +132,7 @@ public struct Driver {
     let imageURL: String
     let locations: [Location]
 
-    init(locations: [Location] = [], firstName: String = "", phoneNumber: String = "", rating: Float = 0, imageURL: String = "") {
+    public init(locations: [Location] = [], firstName: String = "", phoneNumber: String = "", rating: Float = 0, imageURL: String = "") {
         self.firstName = firstName
         self.phoneNumber = phoneNumber
         self.rating = rating
@@ -154,7 +154,7 @@ public struct Address {
     let ETASeconds: Int
     let time: String
 
-    init(lat: Float, lng: Float, address: String = "", ETASeconds: Int = 0, time: String = "") {
+    public init(lat: Float, lng: Float, address: String = "", ETASeconds: Int = 0, time: String = "") {
         self.lat = lat
         self.lng = lng
         self.address = address
@@ -190,7 +190,7 @@ public struct Tip {
     let amount: Int
     let currency: String
 
-    init(amount: Int = 0, currency: String = "") {
+    public init(amount: Int = 0, currency: String = "") {
         self.amount = amount
         self.currency = currency
     }
@@ -201,7 +201,7 @@ public struct RateAndTipQuery {
     let tip: Tip
     let feedback: String
 
-    init(rating: Int, tipAmount: Int = 0, tipCurrency: String = "", feedback: String = "") {
+    public init(rating: Int, tipAmount: Int = 0, tipCurrency: String = "", feedback: String = "") {
         self.rating = rating
         self.tip = Tip(amount: tipAmount, currency: tipCurrency)
         self.feedback = feedback
@@ -239,7 +239,7 @@ public struct RidesHistoryQuery {
     let endTime: String
     let limit: String
 
-    init(startTime: String, endTime: String = "", limit: String = "") {
+    public init(startTime: String, endTime: String = "", limit: String = "") {
         self.startTime = startTime
         self.endTime = endTime
         self.limit = limit
