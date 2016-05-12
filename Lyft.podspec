@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/genadyo/Lyft.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/genadyo'
   s.ios.deployment_target = '8.0'
-  s.source_files = 'Lyft/Classes/**/*'
+  s.source_files = 'Lyft/Classes/*'
 end
