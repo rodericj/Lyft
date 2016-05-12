@@ -1,0 +1,16 @@
+PODS:
+  - Lyft (0.1.0)
+
+DEPENDENCIES:
+  - Lyft (from `../`)
+
+EXTERNAL SOURCES:
+  Lyft:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Lyft: 4b6f0852a60a61b41323d24c05a3f9facc98039f
+
+PODFILE CHECKSUM: 8a0d25e477aa8209244681b9f06fb9ed3ee28879
+
+COCOAPODS: 1.0.0
