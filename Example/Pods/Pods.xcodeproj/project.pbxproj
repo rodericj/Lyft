@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045A1B64C1CE8F72F864CE0307B995F2 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A718DC0216353A792FC13DC001479 /* ReplaceMe.swift */; };
 		202141B367B23501B61F55972FC74745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		738EBCC0B18C283EC504194D62EDE3A3 /* Lyft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05144954A19A6DEAE31C088138033E /* Lyft-dummy.m */; };
 		A44693F9FB4D862952C3F6911B0987DF /* Pods-Lyft_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 371ABC8C8311A9585A3C4374F9361F67 /* Pods-Lyft_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2634DDA1CE446FF00553E03 /* Lyft.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2634DD41CE446FF00553E03 /* Lyft.swift */; };
+		B2634DDB1CE446FF00553E03 /* LyftAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2634DD51CE446FF00553E03 /* LyftAvailability.swift */; };
+		B2634DDC1CE446FF00553E03 /* LyftDeeplinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2634DD61CE446FF00553E03 /* LyftDeeplinking.swift */; };
+		B2634DDD1CE446FF00553E03 /* LyftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2634DD71CE446FF00553E03 /* LyftModel.swift */; };
+		B2634DDE1CE446FF00553E03 /* LyftOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2634DD81CE446FF00553E03 /* LyftOAuth.swift */; };
+		B2634DDF1CE446FF00553E03 /* LyftRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2634DD91CE446FF00553E03 /* LyftRides.swift */; };
 		DDC851FD686AE386E0F618EA17D114EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		E4E8E277BC41C5F2AF50E2DFC0E7B948 /* Pods-Lyft_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F82E5FAC823592F129FBC580368C00 /* Pods-Lyft_Tests-dummy.m */; };
 		FE194577E9657D0EACFF1AE636CF2BA4 /* Lyft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33C170714E909895058CE2F9A8889147 /* Lyft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,7 +32,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009A718DC0216353A792FC13DC001479 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		083A8D1FE8310E03B27049BE69057EB4 /* Pods-Lyft_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lyft_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		13F0D29799C420A24C427D3B15FA2183 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F82E5FAC823592F129FBC580368C00 /* Pods-Lyft_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lyft_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -42,6 +46,12 @@
 		7C05144954A19A6DEAE31C088138033E /* Lyft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Lyft-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B481EA1A402BFED5D657618BFBA29AB /* Pods-Lyft_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Lyft_Tests.modulemap"; sourceTree = "<group>"; };
+		B2634DD41CE446FF00553E03 /* Lyft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lyft.swift; sourceTree = "<group>"; };
+		B2634DD51CE446FF00553E03 /* LyftAvailability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyftAvailability.swift; sourceTree = "<group>"; };
+		B2634DD61CE446FF00553E03 /* LyftDeeplinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyftDeeplinking.swift; sourceTree = "<group>"; };
+		B2634DD71CE446FF00553E03 /* LyftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyftModel.swift; sourceTree = "<group>"; };
+		B2634DD81CE446FF00553E03 /* LyftOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyftOAuth.swift; sourceTree = "<group>"; };
+		B2634DD91CE446FF00553E03 /* LyftRides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyftRides.swift; sourceTree = "<group>"; };
 		C39904DF8F943B398BD2BB4332870A70 /* Lyft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Lyft.modulemap; sourceTree = "<group>"; };
 		CD26BE211C42AC2ED850F5D3FD2ACC11 /* Pods-Lyft_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lyft_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -151,7 +161,12 @@
 		9139E14012EC46276140348EA7015B0F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				009A718DC0216353A792FC13DC001479 /* ReplaceMe.swift */,
+				B2634DD41CE446FF00553E03 /* Lyft.swift */,
+				B2634DD51CE446FF00553E03 /* LyftAvailability.swift */,
+				B2634DD61CE446FF00553E03 /* LyftDeeplinking.swift */,
+				B2634DD71CE446FF00553E03 /* LyftModel.swift */,
+				B2634DD81CE446FF00553E03 /* LyftOAuth.swift */,
+				B2634DD91CE446FF00553E03 /* LyftRides.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,8 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2634DDF1CE446FF00553E03 /* LyftRides.swift in Sources */,
 				738EBCC0B18C283EC504194D62EDE3A3 /* Lyft-dummy.m in Sources */,
-				045A1B64C1CE8F72F864CE0307B995F2 /* ReplaceMe.swift in Sources */,
+				B2634DDD1CE446FF00553E03 /* LyftModel.swift in Sources */,
+				B2634DDA1CE446FF00553E03 /* Lyft.swift in Sources */,
+				B2634DDC1CE446FF00553E03 /* LyftDeeplinking.swift in Sources */,
+				B2634DDE1CE446FF00553E03 /* LyftOAuth.swift in Sources */,
+				B2634DDB1CE446FF00553E03 /* LyftAvailability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
