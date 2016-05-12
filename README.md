@@ -26,7 +26,7 @@ Lyft.set(clientId: "clientId", clientSecret: "clientSecret")
 ```swift
 Lyft.openLyftRide(rideType: .Line, destination: Address(lat: 37.7763592, lng: -122.4242038))
 ```
-Don't forget to update Info.plist to support lyft://
+Don't forget to update Info.plist to support `lyft://`
 
 ### Authentication
 #### Client Credentials (2-legged) flow for public endpoints
