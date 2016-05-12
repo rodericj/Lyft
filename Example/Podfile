@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Lyft_Tests' do
+  pod 'Lyft', :path => '../'
+  
+  
+end
